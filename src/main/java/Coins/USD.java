@@ -1,6 +1,6 @@
 package Coins;
 
-public class USD extends Coin{
+public class USD extends Coin {
 
     @Override
     double getValue() {
@@ -8,4 +8,10 @@ public class USD extends Coin{
         return USDRate;
     }
 
+    @Override
+    public double calculate(double amountTocalculate) {
+        double USDRate = this.getValue();
+        return amountTocalculate*USDRate;
+    }
 }
+
