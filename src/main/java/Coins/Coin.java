@@ -2,7 +2,7 @@ package Coins;
 
 import Interfaces.ICalculate;
 
-abstract public class Coin implements ICalculate {
+public abstract  class Coin implements ICalculate {
     abstract double getValue();
 
 
