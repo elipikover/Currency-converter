@@ -10,7 +10,7 @@ public class USD extends Coin {
     }
 
     @Override
-    public double calculate(double amountTocalculate) {
+    public double calculate(double amountTocalculate) throws NullPointerException {
         return amountTocalculate*USDRate;
     }
 }

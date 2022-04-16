@@ -2,5 +2,5 @@ package Interfaces;
 
 public interface ICalculate {
 
-    double calculate(double amountTocalculate);
+    double calculate(double amountTocalculate) throws NullPointerException;
 }
