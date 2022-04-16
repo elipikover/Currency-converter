@@ -66,22 +66,29 @@ while (true) {
     }
 
     private static boolean anotherRound() {
+
         while (true) {
+
             try {
                 Scanner userInput = new Scanner(System.in);
                 String answer = userInput.nextLine();
 
                 if (answer.equalsIgnoreCase("Y")) {
                     return  true;
+
                 } else if (answer.equalsIgnoreCase("N")) {
                     return false;
+
                 } else {
                     System.out.println("Invalid Choice, please try again");
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid Choice, please try again");
+
             }
+
         }
+
     }
 
 //    Write to file all the conversion results
