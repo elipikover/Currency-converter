@@ -8,14 +8,14 @@ public class CoinFactory {
 
 
     public Coin getCoins(CoinsEnum coin) {
-
-         if (coin.equals(CoinsEnum.ILS)) {
-            return new ILS();
-
-        } else if (coin.equals(CoinsEnum.USD)) {
-            return new USD();
-
-        } else return null;
+        switch (coin) {
+            case ILS:
+                return new ILS();
+            case USD:
+                return new USD();
+            default:
+                return null;
+        }
 
     }
 

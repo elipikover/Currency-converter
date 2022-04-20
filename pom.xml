@@ -5,10 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.eli</groupId>
-    <artifactId>Currency Converter</artifactId>
+    <artifactId>currency.converter</artifactId>
     <version>1.0.0</version>
     <dependencies>
 
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <properties>
