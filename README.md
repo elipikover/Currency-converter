@@ -1,6 +1,8 @@
 # Currency-converter
 **Currency convertor project**
-This is a currency-converter project done for the purposes of learning basic coding in Java.
+
+
+This is a currency-converter project done for the purpose of learning basic coding in Java using OOP principles.
 
 this program 
 Asks user what currency to convert to or from via numeric choice menu
