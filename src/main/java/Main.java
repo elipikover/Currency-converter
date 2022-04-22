@@ -95,7 +95,7 @@ while (true) {
     private static void writeToFile(ArrayList<Double> conversionResults) throws IOException {
         FileWriter myWriter = new FileWriter("results.txt");
         for (double item : conversionResults){
-            String str = Double.toString(item);
+            String str = getFormat(item);
             myWriter.write(str+"\n");
         }
         myWriter.close();
