@@ -2,7 +2,8 @@ package utilities;
 
 public enum CoinsEnum {
      ILS,
-    USD
+    USD,
+    EUR
 }
 
 

@@ -27,6 +27,9 @@ while (true) {
         } else if (operator == 2) {
             return coin.getCoins(CoinsEnum.ILS);
 
+        } else if (operator == 3) {
+            return coin.getCoins(CoinsEnum.EUR);
+
 //            Handle error case of wrong numeric input
         } else {
             System.out.println("Invalid Choice, please try again");
@@ -125,8 +128,9 @@ while (true) {
 
         System.out.println(
                 "\nPlease choose an option (1/2):\n" +
-                        "1. Dollars to Shekels”\n" +
-                        "2. Shekels to Dollars");
+                        "1. Dollars to Shekels\n" +
+                        "2. Shekels to Dollars\n" +
+                        "3.Shekels to Euros\n");
 
 ////    Calculate result of currency conversion and show to user
         double result = getUserCurrency().calculate(getUserAmount());
