@@ -65,6 +65,7 @@ while (true) {
         }
     }
 
+//    Ask user if another conversion is required
     private static boolean anotherRound() {
 
         while (true) {
