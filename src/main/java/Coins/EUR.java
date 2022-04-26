@@ -11,7 +11,7 @@ public class EUR extends Coin {
 
     @Override
     public double calculate(double amountTocalculate) throws NullPointerException {
-        return amountTocalculate*EURRate;
+        return amountTocalculate/EURRate;
     }
 }
 
