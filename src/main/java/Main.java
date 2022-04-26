@@ -55,7 +55,7 @@ public class Main {
         }
     }
 
-    //    method that takes from user amount to convert and returns as double(Second Screen)
+    //    method that takes from user amount to convert and returns as double
     private static double getUserAmount() {
 
         System.out.println("Please enter an amount to convert");
