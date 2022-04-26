@@ -13,8 +13,9 @@ import utilities.CoinsEnum;
 
 public class Main {
     private static Scanner userInput = new Scanner(System.in);
+    static boolean isTest = false;
 
-    //    Initialize Scanner for taking user input
+    //    Initialize Scanner for taking reseting user input
     static void scannerInit(){
         userInput = new Scanner(System.in);
     }
@@ -67,10 +68,11 @@ public class Main {
 
             } catch (InputMismatchException e) {
                 System.out.println("Invalid Choice, please try again");
-                scannerInit();
 
-            }finally {
-                scannerInit();
+
+            }
+            finally {
+               if (!isTest) scannerInit();
             }
         }
     }
@@ -92,7 +94,6 @@ public class Main {
 
                 String answer = userInput.nextLine();
 
-
                 if (answer.equalsIgnoreCase("Y")) {
                     return  true;
 
@@ -101,12 +102,12 @@ public class Main {
 
                 } else {
                     System.out.println("Invalid Choice, please try again");
-                    scannerInit();
+
 
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid Choice, please try again");
-                scannerInit();
+
 
             }
 
@@ -186,6 +187,7 @@ public class Main {
         System.out.println("\n\nPlease choose if you would like to make another conversion\n Y / N.");
 
 //      Get answer from user
+
         iterator = anotherRound();
 }
 
