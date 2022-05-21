@@ -18,7 +18,9 @@ public class BaseTest {
         CurrencyConverterMain.setScannerInput("1\n10\nN\n");
         CurrencyConverterMain.main(new String[0]);
         int value = CurrencyConverterMain.conversionResultList.get(0).intValue();
-        Assert.assertEquals(35.0, value);
+        conversionRatioAPI ratio = new conversionRatioAPI();
+        int expectedResult = (int) (10*ratio.getCurrencyConversionRestApi("USD_ILS"));
+        Assert.assertEquals(expectedResult, value);
 
         }
 

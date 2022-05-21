@@ -7,7 +7,11 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 
-public class API {
+public class conversionRatioAPI {
+
+//    Method that returns currency conversion ratio from free.currconv.com
+//    send key = "USD_ILS" or similar to get a result
+
 
     public  double getCurrencyConversionRestApi(String key) throws IOException {
         // use OKHttp client to create the connection and retrieve data

@@ -1,11 +1,11 @@
 package Coins;
 
-import utilities.API;
+import utilities.conversionRatioAPI;
 
 import java.io.IOException;
 
 public class USD extends Coin {
-    API api = new API();
+    conversionRatioAPI api = new conversionRatioAPI();
     public double USDRate;
     {
         try {
