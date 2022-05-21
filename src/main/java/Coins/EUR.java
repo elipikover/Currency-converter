@@ -1,8 +1,19 @@
 package Coins;
 
-public class EUR extends Coin {
+import utilities.API;
 
-    private final double EURRate = 4.23;
+import java.io.IOException;
+
+public class EUR extends Coin {
+    API api = new API();
+    public double EURRate;
+    {
+        try {
+            EURRate = api.getCurrencyConversionRestApi("ILS_EUR");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Override
     double getValue() {
@@ -11,7 +22,7 @@ public class EUR extends Coin {
 
     @Override
     public double calculate(double amountTocalculate) throws NullPointerException {
-        return amountTocalculate/EURRate;
+        return amountTocalculate*EURRate;
     }
 }
 

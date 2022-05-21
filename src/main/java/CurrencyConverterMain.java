@@ -9,9 +9,10 @@ import java.util.Scanner;
 import Coins.*;
 import utilities.CoinFactory;
 import utilities.CoinsEnum;
+import utilities.Constants;
 
 
-public class Main {
+public class CurrencyConverterMain {
     private static Scanner userInput = new Scanner(System.in);
     static boolean isTest = false;
 
@@ -178,7 +179,7 @@ public class Main {
         double result = getUserCurrency().calculate(getUserAmount());
 
 //      Print result for the user(Third screen)
-        System.out.println("Result of the conversion:  " + getFormat(result));
+        System.out.println("Result of the conversion:  " + getFormat(result)+ Constants.Symbol );
 
 //      Store result of conversion in ArrayList
         conversionResultList.add(result);

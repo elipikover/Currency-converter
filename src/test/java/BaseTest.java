@@ -9,15 +9,15 @@ public class BaseTest {
         @BeforeTest
         public void BeforeTest(){
 
-                Main.isTest = true;
+                CurrencyConverterMain.isTest = true;
         }
 
 
 @Test
         public void conversionValueTestUSDtoILS() throws IOException {
-        Main.setScannerInput("1\n10\nN\n");
-        Main.main(new String[0]);
-        int value = Main.conversionResultList.get(0).intValue();
+        CurrencyConverterMain.setScannerInput("1\n10\nN\n");
+        CurrencyConverterMain.main(new String[0]);
+        int value = CurrencyConverterMain.conversionResultList.get(0).intValue();
         Assert.assertEquals(35.0, value);
 
         }

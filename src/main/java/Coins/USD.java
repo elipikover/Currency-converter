@@ -1,8 +1,19 @@
 package Coins;
 
-public class USD extends Coin {
+import utilities.API;
 
-    private final double USDRate = 3.52;
+import java.io.IOException;
+
+public class USD extends Coin {
+    API api = new API();
+    public double USDRate;
+    {
+        try {
+            USDRate = api.getCurrencyConversionRestApi("USD_ILS");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Override
     double getValue() {

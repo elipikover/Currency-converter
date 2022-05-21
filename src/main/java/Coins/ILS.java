@@ -1,8 +1,19 @@
 package Coins;
 
-public class ILS extends Coin {
+import utilities.API;
 
-    private final double ILSRate = 0.28;
+import java.io.IOException;
+
+public class ILS extends Coin {
+    API api = new API();
+    public double ILSRate;
+    {
+        try {
+            ILSRate = api.getCurrencyConversionRestApi("ILS_USD");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Override
     double getValue( ) {
