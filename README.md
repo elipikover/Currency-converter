@@ -9,8 +9,9 @@ Flow:
 The program asks the user what currency to convert to or from via numeric choice menu
 1. USD->NIS
 2. NIS->USD
+3. NIS->EUR
 
-Thne asks the user for amount to convert in double, shows the result to user and asks if he/she would like to do another conversion
+Then asks the user for amount to convert in double, shows the result to user and asks if he/she would like to do another conversion
 
 in each stage if user enters wrong input the he can retry
 
